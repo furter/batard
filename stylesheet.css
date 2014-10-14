@@ -54,11 +54,15 @@ a {
 	top: 30px;
 	right: 30px;
 	width: 800px;
+	background-color: #E6FFEC;
 }
 .menu {
 	margin-top: 20%;
 }
 .bulle {
+	margin-top: -90px;
+}
+.bulle-S {
 	margin-top: -90px;
 }
 .wie .menu-title {
@@ -133,18 +137,24 @@ a {
 }
 
 /* RESPONSIVE */
+@media screen and (min-width: 480px) {
+	.bulle-S {
+		display: none;
+	}
+}
 @media screen and (max-width: 480px) {
 	.left {
 		position: relative;
 	}
 	.date-info {
 		position: absolute;
-		left: 130px;
+		left: 118px;
 		top: 20px;
 	}
 	.logo {
-		margin-top: 40px;
+		margin-top: 60px;
 		margin-left: 15px;
+		width: 220px;
 	}
 	#corner {
 		display: none;
@@ -166,11 +176,15 @@ a {
 		width: 100%;
 		right: 0px;
 	}
+	.bulle {
+		display: none;
+	}
 	.wat {
-		margin-left: 60px;
+		margin-left: 20px;
 	}
 	.wat-content {
 		width: 350px;
+		margin-left: 0px;
 	}
 	.over {
 		left: 20px;
@@ -180,14 +194,12 @@ a {
 		width: 350px;
 	}
 	.wie {
-		margin-left: 60px;
+		margin-left: 20px;
 	}
 	.wie-content {
 		width: 350px;
 		margin-left: 0px;
 	}
-	.bulle {
-		/* SVG command to shrink it */
-	}
+
 	
 }
