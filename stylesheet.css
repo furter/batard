@@ -23,15 +23,17 @@ div {
 body {
 	background-color: #E6FFEC;
 	font-family: 'Arcadia';
-	font-size: 28px;
+	font-size: 22px;
 	letter-spacing: 1px;
-	line-height: 30px;
+	line-height: 26px;
 }
 
-a {
+a, a:visited, a:active, a:link {
 	text-decoration: none;
 }
-
+a:hover {
+	color: blue;
+}
 .left {
 	position: fixed;
 	left: 0px;
@@ -42,56 +44,72 @@ a {
 	position: absolute;
 	bottom: 20px;
 	left: 20px;
-	font-size: 30px;
-	line-height: 31px;
+	font-size: 26px;
+	line-height: 28px;
 }
 .logo {
 	width: 250px;
 	margin: 20px;
 }
-.content-right {
-	position: absolute;
-	top: 30px;
-	right: 30px;
-	width: 800px;
-	background-color: #E6FFEC;
-}
-.menu {
-	margin-top: 20%;
-}
-.bulle {
-	margin-top: -90px;
-}
-.bulle-S {
-	margin-top: -90px;
-}
-.wie .menu-title {
-	margin-left: 30px;
-}
+/* DIV LANGUAGES */
 .languages {
 	background-color: #E6FFEC;
 	height: 80px;
 	width: 820px;
 	position: fixed;
 	top: 0px;
-	right: 30px;
+	left: 450px;
 	padding-top: 30px;
 	z-index: 100;
-	font-size: 28px;
+	font-size: 23px;
 }
 .languages div {
 	display: inline-block;
 }
+.languages div:hover {
+	color: blue;
+}
 .slash {
 	margin: 0px 50px;
+}
+
+/* DIV MENUS */
+.content-right {
+	position: absolute;
+	top: 30px;
+	left: 450px;
+	width: 800px;
+}
+.menu {
+	margin-top: 12%;
+}
+.bulle-frame {
+	height: 170px;
+}
+.bulle {
+	position: absolute;
+	margin-top: -40px;
+}
+.bulle-S {
+	position: absolute;
+	margin-top: -40px;
 }
 .menu-title {
 	font-size: 75px;
 	font-height: 100px;
+	position: absolute;
+	margin-top: 20px;
+}
+.menu-title:hover {
+	color: blue;
+}
+.wie .menu-title {
+	margin-left: 30px;
 }
 .menu-click {
 	padding-top: 30px;
 	padding-bottom: 30px;
+	background-color: #E6FFEC;
 }
 .wat-content {
 	width: 550px;
@@ -161,7 +179,7 @@ a {
 	}
 	.languages {
 		position: relative;
-		right: 0px;
+		left: 0px;
 		margin-left: 20px;
 		width: 100%;
 	}
@@ -174,7 +192,7 @@ a {
 	.content-right {
 		position: relative;
 		width: 100%;
-		right: 0px;
+		left: 0px;
 	}
 	.bulle {
 		display: none;
