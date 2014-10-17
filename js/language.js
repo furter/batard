@@ -22,15 +22,12 @@ function showLanguage(language) {
 
 $(function() {
 
-    $("div#select_language div a").each (function() {
-        $(this).parent().html($(this).html());
-        $(this).remove();  
-    });
-
     showLanguage(defaultLanguage());
 
     $("div#select_language div").click(function(event){
-        showLanguage($(this).attr("class"));
+        if (!$(this).hasClass("active")) {
+            showLanguage($(this).attr("class"));
+        }
     })
 })
 
