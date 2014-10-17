@@ -81,8 +81,12 @@ a:hover {
 	left: 450px;
 	width: 800px;
 }
+.intro {
+    width: 670px;
+    margin-bottom: 30px;
+}
 .menu {
-	margin-top: 12%;
+	margin-top: 7%;
 }
 .bulle-frame {
 	height: 170px;
@@ -153,6 +157,10 @@ a:hover {
 }
 .content-hidden {
 	display: none;
+}
+.newsletter {
+    margin-top: -30px;
+    text-transform: uppercase;
 }
 
 /* RESPONSIVE */
