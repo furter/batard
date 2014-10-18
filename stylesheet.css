@@ -153,21 +153,124 @@ a:hover {
 }
 .wie {
 	margin-left: 280px;
-	
 }
 .content-hidden {
 	display: none;
 }
 .newsletter {
     margin-top: -30px;
-    text-transform: uppercase;
 }
 
 /* RESPONSIVE */
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1201px) {
 	.bulle-S {
 		display: none;
 	}
+}
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+	.bulle-S {
+		display: none;
+	}
+    .content-right {
+        right: -40px;
+        left: inherit;
+    }
+    .languages {
+        right: -40px;
+        left: inherit;
+    }
+}
+@media screen and (min-width: 771px) and (max-width: 1000px) {
+	.left {
+		position: relative;
+        float: left;
+	}
+    .bulle-S {
+		display: none;
+	}
+	.date-info {
+		position: absolute;
+		left: 118px;
+		top: 20px;
+	}
+	.logo {
+		margin-top: 60px;
+		margin-left: 15px;
+		width: 220px;
+        background-color: #E6FFEC;
+	}
+	#corner {
+		display: none;
+	}
+	.languages {
+    	position: absolute;
+        background-color: #E6FFEC;
+	}
+	.languages div {
+		display: block;
+	}
+	.languages .slash {
+		display: none;
+	}
+	.content-right {
+        margin-top: 250px;
+        right: -40px;
+        left: inherit;
+	}
+}
+@media screen and (min-width: 481px) and (max-width: 770px) {
+	.left {
+		position: relative;
+        float: left;
+	}
+    .bulle-S {
+		display: none;
+	}
+	.date-info {
+		position: absolute;
+		left: 118px;
+		top: 20px;
+	}
+	.logo {
+		margin-top: 60px;
+		margin-left: 15px;
+		width: 220px;
+        background-color: #E6FFEC;
+	}
+	#corner {
+		display: none;
+	}
+	.languages {
+    	position: absolute;
+        background-color: #E6FFEC;
+	}
+	.languages div {
+		display: block;
+	}
+	.languages .slash {
+		display: none;
+	}
+	.content-right {
+        margin-top: 250px;
+		width: 100%;
+		left: 0px;
+	}
+	.wat {
+        margin: 20px;
+	}
+	.over {
+		left: 20px;
+		margin-left: 20px;
+	}
+	.over-content {
+		width: 100%;
+	}
+	.wie {
+		margin-left: 20px;
+	}
+    .newsletter {
+        margin-left: 20px;
+    }
 }
 @media screen and (max-width: 480px) {
 	.left {
@@ -227,6 +330,7 @@ a:hover {
 		width: 350px;
 		margin-left: 0px;
 	}
-
-	
+    .newsletter {
+        margin-left: 20px;
+    }
 }
