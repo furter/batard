@@ -18,10 +18,10 @@
 /////////////////////////////////////////
 
 // Vul hier de mailinglijstnaam in (wat voor de @ komt)
-$listname = "loraine.furter";
+$listname = "communicatie";
 
 // Vul hier uw domeinnaam in
-$listdomain = "gmail.com";
+$listdomain = "batard.be";
 
 // Om misbruik gemakkelijk op te sporen, kunt u gebruik maken van een
 // logbestand om alle subscribes en unsubscribes bij te houden.
@@ -41,7 +41,7 @@ $logfile = "/opt/www/gebruikersnaam/web/private/mailinglistlog.txt";
 // Het script zal automatisch de actie achter de URL plaatsen.
 //   Bij subscribe is dit: $redirect_url?la=subscribe
 //   Bij unsubscribe is dit: $redirect_url?la=unsubscribe
-$redirect_url = "/success.php";
+$redirect_url = "/2014/success.php";
 
 // Vul hier de URL in naar waar geredirect moet worden
 // als het emailadres niet werd ingevuld, of geen
@@ -54,7 +54,7 @@ $redirect_url = "/success.php";
 //   noaction: Geen subscribe/unsubscribe geselecteerd
 //   bademail: Slecht gevormd emailadres ingevuld
 //   other : interne fout, mogelijk configuratiefout van het formulier
-$redirect_error = "/error.php";
+$redirect_error = "/2014/error.php";
 
 //////////////////////////////
 //    EINDE CONFIGURATIE    //
@@ -75,7 +75,7 @@ if(!isset($_POST['submit'])) {
 	addlog("Geen emailadres ingevuld.");
 	header("Location: ".$redirect_error."?la=noemail");
 	
-} elseif(isset($_POST['emailadres'])&&!eregi("^([A-Z0-9\._\+-]+)@([A-Z0-9\.-]+)$", 
+} elseif(isset($_POST['emailadres'])&&!preg_match("/^([A-Z0-9\._\+-]+)@([A-Z0-9\.-]+)$/i", 
 			$_POST['emailadres'])) {
 	
 	addlog("Emailadres incorrect (".$_POST['emailadres'].").");
